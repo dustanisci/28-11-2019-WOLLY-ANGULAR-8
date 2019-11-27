@@ -1,0 +1,14 @@
+@import "palette/palette";
+
+label:first-child {
+  color: palette-color('theme', 1);
+  font-size: 16pt;
+  display: block;
+  font-weight: bold;
+}
+
+label:last-child {
+  color: #000;
+  font-size: 12pt;
+  font-weight: bold;
+}

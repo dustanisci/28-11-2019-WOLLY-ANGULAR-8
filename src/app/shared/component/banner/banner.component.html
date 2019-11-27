@@ -1,3 +1,7 @@
 <div class="banner" [style.background-image]="'url('+url+')'">
-  <div class="description">{{ description }}</div>
+  <div *ngIf="description" class="description container">
+    <label>{{ description }}</label>
+  </div>
+
+  <app-navbar [items]="navbar"></app-navbar>
 </div>

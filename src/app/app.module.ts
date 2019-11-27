@@ -5,8 +5,8 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './shared/component/banner/banner.component';
 import { CardComponent } from './shared/component/card/card.component';
 import { NavbarComponent } from './shared/component/navbar/navbar.component';
-import { InputComponent } from './shared/component/input/input.component';
 import { LabelDescriptionComponent } from './shared/component/label-description/label-description.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,13 +14,15 @@ import { LabelDescriptionComponent } from './shared/component/label-description/
     BannerComponent,
     CardComponent,
     NavbarComponent,
-    InputComponent,
     LabelDescriptionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

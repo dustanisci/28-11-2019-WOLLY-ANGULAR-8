@@ -1,0 +1,54 @@
+@import "palette/palette";
+
+
+div, div > img{
+  width: 300px;
+  @media only screen and (max-width: 1130px) {
+    width: 200px;
+  }
+}
+
+div {
+  border: 1px dotted palette-color('theme', 1);
+  min-height: 100px;
+  position: relative;
+  display: inline-block;
+
+  h2 {
+    font-weight: normal;
+    color: #000;
+    font-size: 20pt;
+    margin: 10px 0 20px 0;
+    text-align: center;
+  }
+
+  label {
+    color: palette-color('theme', 1);
+    font-size: 14pt;
+    text-align: center;
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 0 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFF;
+    background: palette-color('theme', 1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto 10px auto;
+    padding: 20px 0 20px 0;
+    font-size: 14pt;
+    font-weight: 500;
+    cursor:pointer;
+
+    &:hover {
+      background: palette-color('theme-opacity', 90);
+      transition: 0.4s all;
+    }
+  }
+}

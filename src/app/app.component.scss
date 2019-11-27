@@ -1,0 +1,127 @@
+@import "palette/palette";
+
+.container:nth-of-type(3) .row,
+.container:nth-of-type(2) .row {
+  padding: 50px 0;
+  background: #FFF;
+}
+
+.container:nth-of-type(2),
+.container:nth-of-type(3) {
+  margin-top: 25px;
+  display: block;
+}
+
+.container:nth-of-type(2) {
+  .row {
+    min-height: 400px;
+    width: 100%;
+
+    .recoll {
+      display: flex;
+      align-items: center;
+      flex-flow: row wrap;
+
+      @media only screen and (max-width: 850px) {
+        flex-direction: column;
+      }
+
+      app-card {
+        flex: 1;
+        display: flex;
+        margin-bottom: 50px;
+      }
+
+      app-card:first-child {
+        justify-content: flex-start;
+      }
+
+      app-card:nth-of-type(2) {
+        justify-content: center;
+      }
+
+      app-card:last-child {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.container:nth-of-type(3) {
+  flex-direction: column;
+  display: flex;
+
+  .recoll {
+    align-content: stretch;
+    display: flex;
+    flex-flow: row wrap;
+
+    @media only screen and (max-width: 850px) {
+      flex-direction: column;
+    }
+
+    .grid {
+      position: relative;
+      justify-content: space-between;
+      flex-direction: column;
+      display: flex;
+      flex: 1;
+      padding: 0 50px;
+
+      app-label-description {
+        margin-bottom: 60px;
+        display: block;
+
+        @media only screen and (max-width: 850px) {
+          text-align: center;
+        }
+      }
+
+      input,
+      textarea {
+        position: relative;
+        border: 1px solid grey;
+        padding: 20px;
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        flex: 1;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      textarea {
+        resize: none;
+        height: 80px;
+        display:block;
+        flex-basis: auto;
+      }
+
+      .container-btn {
+        display: flex;
+        justify-content: flex-end;
+
+        @media only screen and (max-width: 850px) {
+          justify-content: center;
+        }
+
+        button {
+          background: palette-color('theme', 1);
+          color: #FFFFFF;
+          border: none;
+          border-radius: 5px;
+          transition: 0.4s all;
+          font-size: 12pt;
+          width: 140px;
+          padding: 20px;
+          cursor: pointer;
+          margin-top: 10px;
+
+          &:hover {
+            background: palette-color('theme-opacity', 90);
+          }
+        }
+      }
+    }
+  }
+}

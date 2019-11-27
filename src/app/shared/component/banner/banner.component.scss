@@ -1,6 +1,46 @@
-.banner{
+@import "palette/palette";
+
+.banner {
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: top;
+  height: 400px;
+  position: relative;
+  text-align: center;
+
+  .description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+
+    @media only screen and (max-width: 850px) {
+      width: auto;
+    }
+
+    label {
+      border-radius: 4px;
+      display: block;
+      background: rgba(255, 255, 255, 0.6);
+      margin-top: 50px;
+      font-family: 'advent-pro';
+      font-size: 25pt;
+      padding: 5% 10%;
+      color: palette-color('theme', 1);
+
+      @media only screen and (max-width: 850px) {
+        font-size: 20pt;
+      }
+    }
+  }
+
+  app-navbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }

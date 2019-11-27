@@ -1,0 +1,145 @@
+@import "palette/palette";
+
+.container-navbar {
+  text-align: start;
+  color: #FFF;
+  padding: 20px;
+  background: palette-color('theme-opacity', 80);
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+
+  h1,
+  nav,
+  ul,
+  ul li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    flex: 1;
+
+    @media only screen and (max-width: 850px) {
+      display: inline-block;
+    }
+  }
+
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 850px) {
+      display: unset;
+    }
+
+    ul {
+      display: block;
+
+      @media only screen and (max-width: 850px) {
+        height: 0;
+        transition: all 0.4s;
+
+        a {
+          display: none;
+        }
+
+        &.opened {
+          display: block;
+          height: 100%;
+          position: fixed;
+          background: #000;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 1;
+
+          li:first-child {
+            margin-top: 150px;
+            display: block;
+          }
+
+          a {
+            display: block;
+            text-align: center;
+            font-size: 30pt;
+            margin: 0 0 50px 0;
+          }
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #FFF;
+        margin-left: 40px;
+        font-size: 16pt;
+
+        &:hover {
+          color: rgb(214, 211, 211);
+          transition: 0.4s all;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+
+  .hamburguer,
+  .hamburguer:after,
+  .hamburguer:before {
+    width: 35px;
+    height: 5px;
+    background-color: #FFF;
+    margin: 6px 0;
+    content: ' ';
+    display: block;
+    position: absolute;
+  }
+
+  .hamburguer {
+    right: 30px;
+    top: 15px;
+  }
+
+  .hamburguer:before {
+    top: 5px;
+    position: relative;
+  }
+
+  .close-hamburguer {
+    position: fixed;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    z-index: 2;
+  }
+
+  .close-hamburguer:hover {
+    opacity: 1;
+  }
+
+  .close-hamburguer:before,
+  .close-hamburguer:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 4px;
+    background-color: #FFF;
+  }
+
+  .close-hamburguer:before {
+    transform: rotate(45deg);
+  }
+
+  .close-hamburguer:after {
+    transform: rotate(-45deg);
+  }
+
+}

@@ -1,5 +1,37 @@
-<app-banner [url]="'/assets/img/banner.jpg'"
-  [description]="'Nós somos especialistas no que fazemos pois somos conectados com o mundo, conectados com o seu mundo.'">
-</app-banner>
-<app-navbar></app-navbar>
-<div class="container"></div>
+<div class="container">
+  <app-banner [navbar]="navbar" [url]="'/assets/img/banner.jpg'"
+    [description]="'Nós somos especialistas no que fazemos pois somos conectados com o mundo, conectados com o seu mundo.'">
+  </app-banner>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="recoll">
+      <app-card *ngFor="let card of cards" [title]="card.title" [description]="card.description" [img]="card.img"
+        [link]="card.link">
+      </app-card>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="recoll">
+      <div class="grid">
+        <app-label-description *ngFor="let contact of contacts" [label]="contact.label"
+          [description]="contact.description">
+        </app-label-description>
+      </div>
+      <form class="grid" [formGroup]="contact">
+          <input formControlName="name" type="text" placeholder="Seu Nome" required="true">
+          <input formControlName="email" type="text" placeholder="Seu E-mail" required="true">
+          <input formControlName="phone" type="text" placeholder="Seu telefone" required="true">
+          <textarea formControlName="name" placeholder="Sua Mensagem" required="true"></textarea>
+          
+        <div class="container-btn">
+          <button [disabled]="contact.invalid" (press)="submit()">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

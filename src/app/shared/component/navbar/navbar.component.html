@@ -1,1 +1,12 @@
-<p>navbar works!</p>
+<div class="container-navbar">
+  <h1>.comdeveloper</h1>
+  <nav>
+    <div (click)="menuMobile = true;" class="hamburguer"></div>
+    <div *ngIf="menuMobile === true" (click)="menuMobile = false;" class="close-hamburguer"></div>
+    <ul [ngClass]="{'opened': menuMobile === true}">
+      <li *ngFor="let item of items">
+        <a  href="item.url">{{ item.label }}</a>
+      </li>
+    </ul>
+  </nav>
+</div>
