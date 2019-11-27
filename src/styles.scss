@@ -1,0 +1,38 @@
+@import "palette/palette";
+
+@font-face {
+  font-family: 'advent-pro';
+  src:
+    url('./assets/font/advent-pro/advent-pro-regular.woff') format('woff'),
+    url('./assets/font/advent-pro/advent-pro-regular.woff2') format('woff2'),
+    url('./assets/font/advent-pro/advent-pro-regular.eot') format('eot'),
+    url('./assets/font/advent-pro/advent-pro-regular.otf') format('otf'),
+    url('./assets/font/advent-pro/advent-pro-regular.ttf') format('ttf'),
+    url('./assets/font/advent-pro/advent-pro-regular.svg') format('svg');
+}
+
+@font-face {
+  font-family: 'open-sans';
+  src:
+    url('./assets/font/open-sans/open-sans-regular.woff') format('woff'),
+    url('./assets/font/open-sans/open-sans-regular.woff2') format('woff2'),
+    url('./assets/font/open-sans/open-sans-regular.eot') format('eot'),
+    url('./assets/font/open-sans/open-sans-regular.eot') format('otf'),
+    url('./assets/font/open-sans/open-sans-regular.ttf') format('ttf');
+}
+
+* {
+  font-family: 'open-sans';
+  outline: none;
+  background: #191b1d;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 20px 0 20px;
+}

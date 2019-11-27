@@ -1,0 +1,42 @@
+FRONTEND - TESTE ANGULAR
+
+1 - Criar um projeto em angular com o nome WollySiteApp 
+2 - Criar o layout conforme a imagem
+3 - Separe em componente o que for necessário
+4 - Valide os seguintes campos
+    Nome é obrigatório;
+    E-mail é obrigatório e precisa estar no formato correto;
+    Mensagem é obrigatório;
+5 - Adicione mascara no número de telefone (11) 99999-9999 ou (11) 9999-9999
+6 - Crie o model para o formulário de envio
+
+json:
+{
+  "name":"TESTE DEV1",
+  "mail":"teste.dev1@dev.com",
+  "phone":"11 998822121",
+  "msg":"gostaria de saber mais"
+} 
+
+
+7 - Faça um serviço que envie um post para (https://5dcaaa8d34d54a0014314849.mockapi.io/api/v1/users)
+8 - Faça a integração da tela com o serviço
+9 - Validar se o envio retornou StatusCode Ok
+10 - Demonstrar na tela que a mensagem foi enviada com sucesso!
+11 - Suba o projeto no github
+12 - Envie o link do projeto para o e-mail wolly.conceicao@wolly.com.br e denis@wolly.com.br
+
+
+************************ Informações adicionais ******************************************************
+
+*As imagens que serão utilizadas no teste estão na pasta "images"
+
+*Fontes
+
+Títulos - subtítulos - banner principal
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+font-family: 'Advent Pro', sans-serif;
+ 
+Demais textos, menu e formulário
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+font-family: 'Open Sans', sans-serif;

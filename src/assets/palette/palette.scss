@@ -1,0 +1,17 @@
+$palette-colors: (
+    'theme' : (
+      1 : #581111,
+  ),
+    'opacity' : (
+      1 : rgba(88, 17, 17, 0.2)
+    ),
+    'actions' : (
+      'hover'       : #191847,
+      'disabled'    : #C5CFD6,
+      'invalid'     : #F59393
+  )
+);
+
+@function palette-color($type, $color) {
+  @return map-get(map-get($palette-colors, $type), $color);
+}
