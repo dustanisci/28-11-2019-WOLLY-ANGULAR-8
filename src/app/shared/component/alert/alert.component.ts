@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AlertType } from '../enum/alert';
+import { AlertType } from '@shared/enum/alert';
 
 @Component({
   selector: 'app-alert',
