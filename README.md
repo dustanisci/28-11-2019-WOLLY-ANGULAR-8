@@ -2,6 +2,7 @@
 
 - Criado conforme o protótipo e as especificações.
 https://github.com/dustanisci/WollySiteApp/blob/master/WollySiteApp/Projeto-Final.png
+https://github.com/dustanisci/WollySiteApp/blob/master/WollySiteApp/explica%C3%A7%C3%B5es%20para%20o%20teste.txt
 - Criado paleta de cores, onde é possível modificar por todo site a cor padrão, facilitando a manutenção.
 - Boas práticas e documentação do Angular
 - Componentização inteligente (sendo possível reutilizar os componentes de forma genérica)
