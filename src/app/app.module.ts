@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PhonePipe } from '@shared/pipe/phone/phone.pipe';
 import { AlertComponent } from './shared/component/alert/alert.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule
   ],
   providers: [
+    AppService
   ],
   bootstrap: [AppComponent]
 })
