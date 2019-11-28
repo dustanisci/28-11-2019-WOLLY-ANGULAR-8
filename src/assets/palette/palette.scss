@@ -8,12 +8,7 @@ $palette-colors: (
       70 : rgba(88, 17, 17, 0.7),
       80 : rgba(88, 17, 17, 0.8),
       90 : rgba(88, 17, 17, 0.9)
-    ),
-    'actions' : (
-      'hover'       : #191847,
-      'disabled'    : #C5CFD6,
-      'invalid'     : #F59393
-  )
+    )
 );
 
 @function palette-color($type, $color) {

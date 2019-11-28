@@ -7,6 +7,9 @@ import { CardComponent } from './shared/component/card/card.component';
 import { NavbarComponent } from './shared/component/navbar/navbar.component';
 import { LabelDescriptionComponent } from './shared/component/label-description/label-description.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PhonePipe } from '@shared/pipe/phone/phone.pipe';
+import { AlertComponent } from './shared/component/alert/alert.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BannerComponent,
     CardComponent,
     NavbarComponent,
-    LabelDescriptionComponent
+    LabelDescriptionComponent,
+    PhonePipe,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
   ],

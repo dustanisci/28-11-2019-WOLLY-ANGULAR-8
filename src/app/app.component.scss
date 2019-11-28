@@ -17,7 +17,7 @@
     min-height: 400px;
     width: 100%;
 
-    .recoll {
+    .retreat {
       display: flex;
       align-items: center;
       flex-flow: row wrap;
@@ -50,8 +50,9 @@
 .container:nth-of-type(3) {
   flex-direction: column;
   display: flex;
+  margin-bottom:30px;
 
-  .recoll {
+  .retreat {
     align-content: stretch;
     display: flex;
     flex-flow: row wrap;
@@ -66,7 +67,10 @@
       flex-direction: column;
       display: flex;
       flex: 1;
-      padding: 0 50px;
+
+      .retreat-padding{
+        padding: 0 45px 0 0;
+      }
 
       app-label-description {
         margin-bottom: 60px;
@@ -117,8 +121,13 @@
           cursor: pointer;
           margin-top: 10px;
 
-          &:hover {
+          &:hover:not(.disabled) {
             background: palette-color('theme-opacity', 90);
+          }
+
+          &.disabled{
+            cursor:not-allowed;
+            opacity: 0.5;
           }
         }
       }

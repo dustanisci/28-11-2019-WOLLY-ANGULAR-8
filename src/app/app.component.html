@@ -6,7 +6,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="recoll">
+    <div class="retreat">
       <app-card *ngFor="let card of cards" [title]="card.title" [description]="card.description" [img]="card.img"
         [link]="card.link">
       </app-card>
@@ -16,22 +16,29 @@
 
 <div class="container">
   <div class="row">
-    <div class="recoll">
+    <div class="retreat">
       <div class="grid">
         <app-label-description *ngFor="let contact of contacts" [label]="contact.label"
           [description]="contact.description">
         </app-label-description>
       </div>
-      <form class="grid" [formGroup]="contact">
-          <input formControlName="name" type="text" placeholder="Seu Nome" required="true">
-          <input formControlName="email" type="text" placeholder="Seu E-mail" required="true">
-          <input formControlName="phone" type="text" placeholder="Seu telefone" required="true">
-          <textarea formControlName="name" placeholder="Sua Mensagem" required="true"></textarea>
-          
+      <form class="grid" ngNativeValidate [formGroup]="contactForm" (ngSubmit)="sendContact()">
+        <div class="retreat-padding">
+          <input formControlName="name" type="text" placeholder="Seu Nome">
+          <input formControlName="mail" type="email" placeholder="Seu E-mail">
+          <input formControlName="phone" maxlength="15" type="text" placeholder="Seu Telefone"
+            (keyup)="contactForm.get('phone').setValue(phone.transform(contactForm.get('phone').value))">
+          <textarea formControlName="msg" placeholder="Sua Mensagem"></textarea>
+        </div>
         <div class="container-btn">
-          <button [disabled]="contact.invalid" (press)="submit()">Enviar</button>
+          <button type="submit" [disabled]="contactForm.invalid"
+            [ngClass]="{ disabled: contactForm.invalid }">Enviar</button>
         </div>
       </form>
     </div>
   </div>
 </div>
+
+<app-alert [ngStyle]="{opacity: alertType ? '1' : '0'}"
+  [msg]="alertType === 1 ? 'Sua mensagem foi enviado com sucesso!!' : 'Falha na sua mensagem, tente novamente!!'"
+  [type]="alertType"></app-alert>

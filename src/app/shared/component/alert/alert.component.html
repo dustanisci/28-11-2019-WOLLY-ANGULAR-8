@@ -1,0 +1,3 @@
+<div [ngClass]="{ 'error' : type === 2, 'success' : type === 1 }">
+  <label *ngIf="type">{{ msg }}</label>
+</div>
