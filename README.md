@@ -11,7 +11,7 @@ https://github.com/dustanisci/WollySiteApp/blob/master/WollySiteApp/explica%C3%A
 (Alert, Banner, Card, Navbar e labels descritivas)
 - Modificado os arquivos angular.json e tsconfig.json para encurtar os diretórios (boa prática, evitando  diretórios longos ../../../../../)
 - Font family interna, evita a aplicação buscar e baixar de fontes externas
-- Utilizado Pipe como máscara, sendo possível reutilizá-lo.
+- Utilizado Pipe em máscara, sendo possível reutilizá-lo.
 - Criado Interfaces e Enums
 - Mocky em cenários necessários (onde deveria ter um serviço de back-end)
 - Environments com o endpoint do serviço
