@@ -1,4 +1,4 @@
-## O que foi utilizado
+## Utilizado
 
 - Criado paleta de cores, onde é possível modificar por todo site a cor padrão, facilitando a manutenção.
 - Boas práticas e documentação do Angular
