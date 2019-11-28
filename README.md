@@ -4,7 +4,7 @@
 - Criado paleta de cores, onde é possível modificar por todo site a cor padrão, facilitando a manutenção.
 - Boas práticas e documentação do Angular
 - Componentização inteligente (sendo possível reutilizar os componentes de forma genérica)
-- Não foi utilizado bibliotecas externas de CSS, feito um bom código e sucinto.
+- Não foi utilizado bibliotecas externas de CSS, feito um bom código, indentado e sucinto.
 - Não foi utilizado componentes externos(npm), todos criados por mim.
 (Alert, Banner, Card, Navbar e labels descritivas)
 - Modificado os arquivos angular.json e tsconfig.json para encurtar os diretórios (boa prática, evitando  diretórios longos ../../../../../)
