@@ -13,5 +13,5 @@ https://github.com/dustanisci/WollySiteApp/blob/master/WollySiteApp/explica%C3%A
 - Font family interna, evita a aplicação buscar e baixar de fontes externas
 - Utilizado Pipe em máscara, sendo possível reutilizá-lo.
 - Criado Interfaces e Enums
-- Mocky em cenários necessários (onde deveria ter um serviço de back-end)
+- Mocky em cenários necessários (deveria ter um serviço de back-end)
 - Environments com o endpoint do serviço
