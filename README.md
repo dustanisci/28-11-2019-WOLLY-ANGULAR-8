@@ -1,4 +1,4 @@
-## Site WOLLY  
+## Site WOLLY
 28/11/2019 - Site Wolly, o qual desenvolve sites comerciais para clientes. Utilizado angular 8.
 Este site pode ser consultado no endereço: https://dustanisci.github.io/28-11-2019-site-wolly-angular8-git-io/
 
