@@ -10,9 +10,9 @@ export const navbar: Navbar[] = [
 ];
 
 export const cards: Card[] = [
-  { title: 'Front-End', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: '/assets/img/frontend.jpg', link: '' },
-  { title: 'Mobile', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: '/assets/img/mobile.jpg', link: '' },
-  { title: 'Back-End', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: '/assets/img/backend.jpg', link: '' },
+  { title: 'Front-End', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: 'assets/img/frontend.jpg', link: '' },
+  { title: 'Mobile', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: 'assets/img/mobile.jpg', link: '' },
+  { title: 'Back-End', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', img: 'assets/img/backend.jpg', link: '' },
 ];
 
 export const contact: LabelDescription[] = [

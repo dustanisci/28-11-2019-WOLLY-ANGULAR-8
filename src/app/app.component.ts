@@ -7,7 +7,6 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { PhonePipe } from '@shared/pipe/phone/phone.pipe';
 import { AlertType } from '@shared/enum/alert';
 import { AppService } from './app.service';
-import { HttpErrorResponse } from '@angular/common/http';
 import { Contact } from '@shared/interface/contact';
 
 @Component({
@@ -53,7 +52,7 @@ export class AppComponent {
         this.hideMsg();
         this.contactForm.reset();
       },
-      (error: HttpErrorResponse) => {
+      () => {
         this.alertType = 2;
         this.hideMsg();
       });
