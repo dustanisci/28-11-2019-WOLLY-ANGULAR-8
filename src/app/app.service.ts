@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Contact } from '@shared/interface/contact';
 import { environment } from 'src/environments/environment';
+import { ApiService } from '@shared/api/api.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AppService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private apiservice: ApiService) { }
 
   public send(contact: Contact): Observable<Contact> {
-    const headers = new HttpHeaders().append('Content-Type', 'application/json');
-    return this.http.post<Contact>(`${environment.contact}`, contact, { headers });
+    return this.apiservice.post(`${environment.contact}`, contact);
   }
 }
