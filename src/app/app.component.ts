@@ -50,7 +50,7 @@ export class AppComponent {
     this.contact.msg = this.contactForm.get('msg').value;
     this.contact.phone = this.contactForm.get('phone').value;
 
-    of(this.appService.send(this.contact))
+    this.appService.send(this.contact)
       .pipe(take(1))
       .subscribe({
         next: () => {
