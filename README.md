@@ -24,5 +24,4 @@
   <li> Font family interna, evita a aplicação buscar e baixar de fontes externas na web.</li>
   <li>Utilizado Pipe em máscara, sendo possível reutilizá-lo.</li>
   <li> Criado Interfaces e Enums</li>
-  <li>Environments com o endpoint do serviço</li>
  </ul>
