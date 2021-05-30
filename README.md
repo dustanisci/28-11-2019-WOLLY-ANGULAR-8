@@ -1,11 +1,11 @@
 ## Formulário de contato 
-<b>Descrição:</b> Exemplo de uma página de formulário de contato em Angular 9, possui validações e mensagens personalizadas. Acessível em celulares, tablets, notebooks e desktops.
+<b>Descrição:</b> Exemplo de uma página de formulário de contato em Angular 12, possui validações e mensagens personalizadas. Acessível em celulares, tablets, notebooks e desktops.
 
-<b>Endereço de acesso:</b> https://dustanisci.github.io/contact-page-angular9/
+<b>Endereço de acesso:</b> https://dustanisci.github.io/contact-page-angular12/
 
 <b>Tecnologias utilizadas: </b>
 <ul>
-  <li>Angular 9</li>
+  <li>Angular 12</li>
   <li>HTML 5 </li>
   <li>SCSS / CSS 3</li>
   <li>TypeScript</li>
